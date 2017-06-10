@@ -11,9 +11,5 @@ namespace sbsjlpxcx.Busines
 {
    public class Sys_UserBLL
     {
-        public List<Sys_User> SelectUserList(Sys_UserParms parms)
-        {
-            return 
-        }
     }
 }
