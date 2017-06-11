@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
+using System.Configuration;
 
 namespace sbsjlpxcx.Dapper
 {
@@ -13,7 +14,8 @@ namespace sbsjlpxcx.Dapper
     {
         private static IDbConnection OpenConnection()
         {
-            IDbConnection connection = new SqlConnection("connStr"); 
+            string connstr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
+            IDbConnection connection = new SqlConnection(connstr); 
             connection.Open();
             return connection;
         }

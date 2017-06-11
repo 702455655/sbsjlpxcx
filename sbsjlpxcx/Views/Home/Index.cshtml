@@ -234,3 +234,11 @@
         </div>
     </div>
 </div>
+<script src="~/Content/js/plugins/jquery/jquery-2.2.4.js"></script>
+<script>
+    $.post("/Home/GetUser", function (data) {
+        $.each(data, function (i, v) {
+            alert(v.Name);
+        })
+    })
+</script>

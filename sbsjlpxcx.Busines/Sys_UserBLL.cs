@@ -12,10 +12,9 @@ namespace sbsjlpxcx.Busines
 {
    public class Sys_UserBLL
     {
-        Sys_UserIService sys_User;
         public List<Sys_User> GetSys_UserList(Sys_UserParms parms)
         {
-            return sys_User.GetSys_UserList(parms);
+            return new Sys_UserService().GetSys_UserList(parms);
         }
     }
 }

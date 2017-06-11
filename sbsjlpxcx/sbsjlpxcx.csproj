@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>sbsjlpxcx</RootNamespace>
     <AssemblyName>sbsjlpxcx</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -263,6 +263,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\sbsjlpxcx.Busines\02 sbsjlpxcx.Busines.csproj">
+      <Project>{9327e3e7-c495-4c0c-a582-3328f8555eda}</Project>
+      <Name>02 sbsjlpxcx.Busines</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sbsjlpxcx.Entity\01 sbsjlpxcx.Entity.csproj">
+      <Project>{f94916ac-a998-4ee1-8d03-000aa96e6d4a}</Project>
+      <Name>01 sbsjlpxcx.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
