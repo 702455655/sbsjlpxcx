@@ -14,7 +14,7 @@ namespace sbsjlpxcx.Dapper
     {
         private static IDbConnection OpenConnection()
         {
-            string connstr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
+            string connstr = ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;//获取界面应用层中的web.config 中<connectionStrings>这个节点里边的connStr，这是一个数据库连接字符串，我们在后边需要用这个字符串来打开数据库连接，让程序和数据库进行数据交互
             IDbConnection connection = new SqlConnection(connstr); 
             connection.Open();
             return connection;
