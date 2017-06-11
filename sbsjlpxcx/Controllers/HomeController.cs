@@ -15,6 +15,11 @@ namespace sbsjlpxcx.Controllers
         {
             return View("Index");
         }
+        /// <summary>
+        /// 只是测试能否拿到数据
+        /// </summary>
+        /// <param name="parms">前台传回来的参数</param>
+        /// <returns></returns>
         public ActionResult GetUser(Sys_UserParms parms)
         {
             parms.PageIndex = 1;
