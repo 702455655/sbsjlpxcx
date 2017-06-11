@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "用户信息";
+}
+
+<h2>Index</h2>
+
+<input type="button" onclick="add()" value="添加" />
+<input type="button" onclick="FindUserByID(1)" value="查找" />
+<script src="~/Content/js/plugins/jquery/jquery-2.2.4.js"></script>
+<script>
+    $.post("/User/GetUser", function (data) {
+        $.each(data, function (i, v) {
+            alert(v.Name);
+        })
+    })
+    function add() {
+        $.post("/User/AddUser", function (data) {
+            if (data) {
+                alert("添加成功");
+            }
+        })
+    }
+    function FindUserByID(ID) {
+        $.post("/User/GetUserInfo", { ID: ID }, function (data) {
+            alert(data.Name);
+        })
+    }
+</script>

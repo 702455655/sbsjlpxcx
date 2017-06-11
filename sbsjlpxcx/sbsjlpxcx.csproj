@@ -228,6 +228,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -253,6 +254,7 @@
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_Sidebar.cshtml" />
     <Content Include="Views\Shared\_ControlSidebar.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

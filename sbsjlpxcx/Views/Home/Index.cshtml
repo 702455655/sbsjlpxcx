@@ -234,25 +234,3 @@
         </div>
     </div>
 </div>
-<input type="button" onclick="add()" value="添加" />
-<input type="button"  onclick="FindUserByID(1)" value="查找"/>
-<script src="~/Content/js/plugins/jquery/jquery-2.2.4.js"></script>
-<script>
-    $.post("/Home/GetUser", function (data) {
-        $.each(data, function (i, v) {
-            alert(v.Name);
-        })
-    })
-    function add() {
-        $.post("/Home/AddUser", function (data) {
-            if (data) {
-                alert("添加成功");
-            }
-        })
-    }
-    function FindUserByID(ID) {
-        $.post("/Home/GetUserInfo", { ID: ID }, function (data) {
-            alert(data.Name);
-        })
-    }
-</script>

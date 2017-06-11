@@ -22,6 +22,9 @@
             <li class="@(ViewContext.RouteData.Values["Action"].ToString() == nameof(HomeController.AnotherLink) ? "active" : "")">
                 <a href="@Url.Action("Index", "Home")"><i class="fa fa-link"></i> <span>Another Link</span></a>
             </li>
+            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == nameof(UserController.Index) ? "active" : "")">
+                <a href="@Url.Action("Index", "User")"><i class="fa fa-link"></i> <span>用户信息</span></a>
+            </li>
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-link"></i> <span>Multilevel</span>
