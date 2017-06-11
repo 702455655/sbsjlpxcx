@@ -8,6 +8,7 @@ namespace sbsjlpxcx.Entity._01_Models
 {
    public class ModelBase
     {
+        [Key]
         public int ID { get; set; }
     }
 }

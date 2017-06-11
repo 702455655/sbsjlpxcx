@@ -48,6 +48,10 @@
       <Project>{f94916ac-a998-4ee1-8d03-000aa96e6d4a}</Project>
       <Name>01 sbsjlpxcx.Entity</Name>
     </ProjectReference>
+    <ProjectReference Include="..\sbsjlpxcx.IService\03 sbsjlpxcx.IService.csproj">
+      <Project>{8EBA4E87-D4D1-4575-B16E-BF5DB6149EB5}</Project>
+      <Name>03 sbsjlpxcx.IService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\sbsjlpxcx.Service\04 sbsjlpxcx.Service.csproj">
       <Project>{6a5da388-8af9-43a0-b83d-f69463d8bc90}</Project>
       <Name>04 sbsjlpxcx.Service</Name>
