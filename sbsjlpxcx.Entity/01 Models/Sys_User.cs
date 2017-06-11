@@ -12,5 +12,6 @@ namespace sbsjlpxcx.Entity._01_Models
     {
         public string Name { get; set; }
         public string Password { get; set; }
+        public bool Usertype { get; set; }
     }
 }

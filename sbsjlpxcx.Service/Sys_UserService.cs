@@ -12,9 +12,19 @@ namespace sbsjlpxcx.Service
 {
     public class Sys_UserService : Sys_UserIService
     {
+        public Sys_User GetSys_User(Sys_UserParms parms)
+        {
+            return DapperBase.GetInfo<Sys_User>(parms.ID);
+        }
+
         public List<Sys_User> GetSys_UserList(Sys_UserParms parms)
         {
            return DapperBase.GetListPaged<Sys_User>(parms.PageIndex,parms.PageSize,"","ID DESC");
+        }
+
+        public int? Insert(Sys_User parms)
+        {
+            return DapperBase.Insert(parms);
         }
     }
 }

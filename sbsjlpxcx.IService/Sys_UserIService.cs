@@ -11,5 +11,8 @@ namespace sbsjlpxcx.IService
     public interface Sys_UserIService
     {
          List<Sys_User> GetSys_UserList(Sys_UserParms parms);
+         Sys_User GetSys_User(Sys_UserParms parms);
+        int? Insert(Sys_User parms);
+        
     }
 }

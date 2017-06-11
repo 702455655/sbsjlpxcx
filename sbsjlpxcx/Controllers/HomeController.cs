@@ -1,6 +1,7 @@
 ﻿using sbsjlpxcx.Busines;
 using System.Web.Mvc;
 using sbsjlpxcx.Entity._02_Parms;
+using sbsjlpxcx.Entity._01_Models;
 
 namespace sbsjlpxcx.Controllers
 {
@@ -26,6 +27,19 @@ namespace sbsjlpxcx.Controllers
             parms.PageSize = 10;
             return Json(new Sys_UserBLL().GetSys_UserList(parms));
         }
+        public ActionResult AddUser()
+        {
+            Sys_User user = new Sys_User();
+            user.Name = "大傻逼";
+            user.Password = "123456";
+            user.Usertype = false;
+            return Content(new Sys_UserBLL().Insert(user).ToString());
 
+        }
+
+        public ActionResult GetUserInfo(Sys_UserParms parms)
+        {
+            return Json(new Sys_UserBLL().GetSys_User(parms));
+        }
     }
 }

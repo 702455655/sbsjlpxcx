@@ -8,6 +8,7 @@ namespace sbsjlpxcx.Entity._02_Parms
 {
    public class Sys_UserParms:ParmsBase
     {
+        public int ID { get; set; }
         public string Name { get; set; }
     }
 }
