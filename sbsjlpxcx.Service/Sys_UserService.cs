@@ -26,9 +26,9 @@ namespace sbsjlpxcx.Service
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        public List<Sys_User> GetSys_UserList(Sys_UserParms parms)
+        public List<Sys_User> GetSys_UserList(Sys_UserParms parms,ref int totalCount)
         {
-           return DapperBase.GetListPaged<Sys_User>(parms.PageIndex,parms.PageSize,"","ID DESC");
+           return DapperBase.GetListPaged<Sys_User>(parms.PageIndex,parms.PageSize,"","ID DESC",ref totalCount);
         }
         /// <summary>
         /// 添加用户

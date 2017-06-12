@@ -124,11 +124,11 @@ namespace sbsjlpxcx.Dapper
         /// <param name="conditions">查询条件  where age = 10 or Name like '%Smith%'</param>
         /// <param name="orderby">排序条件  Name desc</param>
         /// <returns></returns>
-        public static List<T> GetListPaged<T>(int pageNumber, int pageSize, string conditions, string orderby)
+        public static List<T> GetListPaged<T>(int pageNumber, int pageSize, string conditions, string orderby,ref int totalCount)
         {
             using (var conn = OpenConnection())
             {
-                return conn.GetListPaged<T>(pageNumber, pageSize, conditions, orderby).ToList();
+                return conn.GetListPaged<T>(pageNumber, pageSize, conditions, orderby,ref totalCount).ToList();
             }
         }
         /// <summary>

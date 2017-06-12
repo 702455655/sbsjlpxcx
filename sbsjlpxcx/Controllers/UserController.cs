@@ -23,9 +23,11 @@ namespace sbsjlpxcx.Controllers
         /// <returns></returns>
         public ActionResult GetUser(Sys_UserParms parms)
         {
+            int totalCount = 0;
             parms.PageIndex = 1;
             parms.PageSize = 10;
-            return Json(new Sys_UserBLL().GetSys_UserList(parms));
+            var re = new Sys_UserBLL().GetSys_UserList(parms, ref totalCount);
+            return Json(re);
         }
         public ActionResult AddUser()
         {

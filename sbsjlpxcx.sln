@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 sbsjlpxcx.Entity", "sbsj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sbsjlpxcx.Dapper", "sbsjlpxcx.Dapper\sbsjlpxcx.Dapper.csproj", "{270167BB-CE68-4F4C-9698-E29060EA64EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sbsjlpxcx.DapperCRUD", "sbsjlpxcx.DapperCRUD\sbsjlpxcx.DapperCRUD.csproj", "{FB7A3059-568F-44B3-86DE-E00D8A654EE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{270167BB-CE68-4F4C-9698-E29060EA64EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{270167BB-CE68-4F4C-9698-E29060EA64EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{270167BB-CE68-4F4C-9698-E29060EA64EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB7A3059-568F-44B3-86DE-E00D8A654EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB7A3059-568F-44B3-86DE-E00D8A654EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB7A3059-568F-44B3-86DE-E00D8A654EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB7A3059-568F-44B3-86DE-E00D8A654EE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,5 +70,6 @@ Global
 		{6A5DA388-8AF9-43A0-B83D-F69463D8BC90} = {A95F41D0-CE91-415A-BB54-3AA4DC8661A5}
 		{F94916AC-A998-4EE1-8D03-000AA96E6D4A} = {A95F41D0-CE91-415A-BB54-3AA4DC8661A5}
 		{270167BB-CE68-4F4C-9698-E29060EA64EE} = {C1B06194-8531-497E-84A6-E24E0E86DFAE}
+		{FB7A3059-568F-44B3-86DE-E00D8A654EE7} = {C1B06194-8531-497E-84A6-E24E0E86DFAE}
 	EndGlobalSection
 EndGlobal

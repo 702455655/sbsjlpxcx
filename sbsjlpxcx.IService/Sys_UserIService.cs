@@ -15,7 +15,7 @@ namespace sbsjlpxcx.IService
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        List<Sys_User> GetSys_UserList(Sys_UserParms parms);
+        List<Sys_User> GetSys_UserList(Sys_UserParms parms, ref int totalCount);
         /// <summary>
         /// 获取单个用户
         /// </summary>

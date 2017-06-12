@@ -26,9 +26,9 @@ namespace sbsjlpxcx.Busines
         /// </summary>
         /// <param name="parms"></param>
         /// <returns></returns>
-        public List<Sys_User> GetSys_UserList(Sys_UserParms parms)
+        public List<Sys_User> GetSys_UserList(Sys_UserParms parms,ref int totalCount)
         {
-            return new Sys_UserService().GetSys_UserList(parms);
+            return new Sys_UserService().GetSys_UserList(parms,ref totalCount);
         }
         /// <summary>
         /// 添加用户
