@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sys_UserService.cs" />
+    <Compile Include="SystemManage\LogService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\sbsjlpxcx.Dapper\sbsjlpxcx.Dapper.csproj">
@@ -56,6 +56,13 @@
       <Project>{8eba4e87-d4d1-4575-b16e-bf5db6149eb5}</Project>
       <Name>03 sbsjlpxcx.IService</Name>
     </ProjectReference>
+    <ProjectReference Include="..\sbsjlpxcx.Util\sbsjlpxcx.Util.csproj">
+      <Project>{3dcd3120-8f4b-4b3d-8da4-f862a4a001e0}</Project>
+      <Name>sbsjlpxcx.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AuthorizeManage\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

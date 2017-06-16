@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sys_UserBLL.cs" />
+    <Compile Include="SystemManage\LogBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\sbsjlpxcx.Entity\01 sbsjlpxcx.Entity.csproj">
@@ -56,6 +56,13 @@
       <Project>{6a5da388-8af9-43a0-b83d-f69463d8bc90}</Project>
       <Name>04 sbsjlpxcx.Service</Name>
     </ProjectReference>
+    <ProjectReference Include="..\sbsjlpxcx.Util\sbsjlpxcx.Util.csproj">
+      <Project>{3dcd3120-8f4b-4b3d-8da4-f862a4a001e0}</Project>
+      <Name>sbsjlpxcx.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AuthorizeManage\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

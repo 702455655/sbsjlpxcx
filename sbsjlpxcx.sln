@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sbsjlpxcx", "sbsjlpxcx\sbsjlpxcx.csproj", "{F29D1E51-8DD9-4E98-AF38-EC6C20019BA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sbsjlpxcx.Web", "sbsjlpxcx.Web\sbsjlpxcx.Web.csproj", "{F29D1E51-8DD9-4E98-AF38-EC6C20019BA3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 界面应用层", "04 界面应用层", "{858EA630-C52C-466D-9E42-001F0151D078}"
 EndProject
@@ -24,6 +24,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sbsjlpxcx.Dapper", "sbsjlpxcx.Dapper\sbsjlpxcx.Dapper.csproj", "{270167BB-CE68-4F4C-9698-E29060EA64EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sbsjlpxcx.DapperCRUD", "sbsjlpxcx.DapperCRUD\sbsjlpxcx.DapperCRUD.csproj", "{FB7A3059-568F-44B3-86DE-E00D8A654EE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sbsjlpxcx.Util", "sbsjlpxcx.Util\sbsjlpxcx.Util.csproj", "{3DCD3120-8F4B-4B3D-8DA4-F862A4A001E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sbsjlpxcx.Code", "sbsjlpxcx.Code\sbsjlpxcx.Code.csproj", "{E5E9640D-F2DC-4DBD-B907-07655617A752}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +63,14 @@ Global
 		{FB7A3059-568F-44B3-86DE-E00D8A654EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB7A3059-568F-44B3-86DE-E00D8A654EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB7A3059-568F-44B3-86DE-E00D8A654EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DCD3120-8F4B-4B3D-8DA4-F862A4A001E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DCD3120-8F4B-4B3D-8DA4-F862A4A001E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DCD3120-8F4B-4B3D-8DA4-F862A4A001E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DCD3120-8F4B-4B3D-8DA4-F862A4A001E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5E9640D-F2DC-4DBD-B907-07655617A752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5E9640D-F2DC-4DBD-B907-07655617A752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5E9640D-F2DC-4DBD-B907-07655617A752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5E9640D-F2DC-4DBD-B907-07655617A752}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,5 +83,7 @@ Global
 		{F94916AC-A998-4EE1-8D03-000AA96E6D4A} = {A95F41D0-CE91-415A-BB54-3AA4DC8661A5}
 		{270167BB-CE68-4F4C-9698-E29060EA64EE} = {C1B06194-8531-497E-84A6-E24E0E86DFAE}
 		{FB7A3059-568F-44B3-86DE-E00D8A654EE7} = {C1B06194-8531-497E-84A6-E24E0E86DFAE}
+		{3DCD3120-8F4B-4B3D-8DA4-F862A4A001E0} = {60B28F6D-CF23-4F9C-9EB9-9CFD85A5657C}
+		{E5E9640D-F2DC-4DBD-B907-07655617A752} = {858EA630-C52C-466D-9E42-001F0151D078}
 	EndGlobalSection
 EndGlobal

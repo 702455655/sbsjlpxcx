@@ -119,16 +119,16 @@ namespace sbsjlpxcx.Dapper
         /// 分页查询
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="pageNumber">页码</param>
+        /// <param name="PageIndex">页码</param>
         /// <param name="pageSize">页大小</param>
         /// <param name="conditions">查询条件  where age = 10 or Name like '%Smith%'</param>
         /// <param name="orderby">排序条件  Name desc</param>
         /// <returns></returns>
-        public static List<T> GetListPaged<T>(int pageNumber, int pageSize, string conditions, string orderby,ref int totalCount)
+        public static List<T> GetListPaged<T>(int PageIndex, int pageSize, string conditions, string orderby,ref int totalCount)
         {
             using (var conn = OpenConnection())
             {
-                return conn.GetListPaged<T>(pageNumber, pageSize, conditions, orderby,ref totalCount).ToList();
+                return conn.GetListPaged<T>(PageIndex, pageSize, conditions, orderby,ref totalCount).ToList();
             }
         }
         /// <summary>
